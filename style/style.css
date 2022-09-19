@@ -1,0 +1,44 @@
+.header{
+    width: 800px;
+    height: 200px;
+    border: 3px solid red;
+    color: dimgray;
+    text-align: center;
+    padding-top: 3%;
+    box-sizing: border-box;
+    font-size: 60px;
+}
+.nav{
+    display: inline-flex;
+    width: 100px;
+    height: 400px;
+    border: 3px solid orange;
+    text-align: center;
+    font-size: 27px;
+    padding-top: 10.2%;
+    box-sizing: border-box;
+    color: dimgray;
+}
+.section{
+    display: inline-flex;
+    width: 700px;
+    height: 400px;
+    border: 3px solid orange;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 8.2%;
+    box-sizing: border-box;
+    padding-left: 7%;
+    color: dimgray;
+}
+.footer{
+    width: 800px;
+    height: 200px;
+    border: 3px solid gray;
+    margin-top: -4px;
+    color: dimgray;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 3.3%;
+    box-sizing: border-box;
+}

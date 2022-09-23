@@ -1,30 +1,32 @@
 
 
 
-document.write("<header class='header'> header 800*200 </header>" );
-document.write("<nav class='nav'> nav 100*400 </nav>") ;
-document.write("<section class='section'> section 700*400 </section>" );
+document.write("<header class='header'> header 800*200 </header>");
+document.write("<nav class='nav'> nav 100*400 </nav>");
+document.write("<section class='section'> section 700*400 </section>");
 document.write("<footer class='footer'> footer 800*200 </footer> <br>");
 
 
-var firstName= prompt("Ваше ім'я?");
+var firstName = prompt("Ваше ім'я?");
 var surname = prompt("Ваше прізвище?");
 var yers = prompt("Скільки вам років?");
-var yers_2= prompt("А на скільки ви себе відчуваєте?");
+var yers_2 = prompt("А на скільки ви себе відчуваєте?");
 var yers_3 = prompt("І скільки років вам дають не знайомі люди?");
 
 var rs_4 = +yers + +yers_2 + +yers_3;
-document.write( "Ви виглядаєте на " + rs_4/3 + " років" + "<br>") ;
+var rs_5 = rs_4 / 3;
+var rs_6 = Math.floor(rs_5);
+document.write('Ви виглядаєте на ' + rs_6 + ' років<br>');
 
 document.write('Вітаю вас ' + firstName + '<br>');
 document.write('У вас дуже гарне прізвище ' + surname + '<br>');
 document.write(yers + '<br>');
 
 
-var x = 6, y = 14, z =4;
+var x = 6, y = 14, z = 4;
 
 x += y - x++ * z;
-document.write( x +'<br>');
+document.write(x + '<br>');
 /*6 + = 14- 6++ * 4 
 1. Постфіксний інкремент має приорітетність 16   x=7
 2. дія множення має приорітет 13 (так як 'х' маємо Постфіксний інкремент то він повертає попередне значення х=6 ) 6*4=24
@@ -32,20 +34,20 @@ document.write( x +'<br>');
 4. і остання дія присвоювання з приорітетом 2   6 +=-10  =-4
 5. і відплвідь буде -4 */
 
-x = 6, y = 14, z =4;
+x = 6, y = 14, z = 4;
 
-document.write(z = --x - y * 5 +'<br>');
+document.write(z = --x - y * 5 + '<br>');
 /* 
 z= --6 - 14 * 5
 1. Дія префіксний декремент має приорітетність 15   x=5
 2. дія множення приорітетність 13   14*5= 70
 3. дія віднімання приорітетність 12   5 -70 =-65
 4. Дія присвоювання z = -65  Відповідь: -65
-*/ 
+*/
 
-x = 6, y = 14, z =4;
-y/= x + 5 % z ;
-document.write ( y +'<br>');
+x = 6, y = 14, z = 4;
+y /= x + 5 % z;
+document.write(y + '<br>');
 /*
 14 /= 6 + 5 % 4
 1. Дія Залишок від поділу приорітетність 13   5 % 4= 1
@@ -53,8 +55,8 @@ document.write ( y +'<br>');
 3. Дія просвоєння  приорітетність 2 14 / 7 = 2  відповідь: 2 
 */
 
-x = 6, y = 14, z =4;
-document.write( z - x++ + y * 5 +'<br>');
+x = 6, y = 14, z = 4;
+document.write(z - x++ + y * 5 + '<br>');
 
 /*
 4-6++ + 14*5
@@ -64,8 +66,8 @@ document.write( z - x++ + y * 5 +'<br>');
 4. Дія додавання приорітетність 12 -2 + 70 = 68 Відповідь: 68
 */
 
-x = 6, y = 14, z =4;
-document.write ( x = y - x++ * z +'<br>');
+x = 6, y = 14, z = 4;
+document.write(x = y - x++ * z + '<br>');
 
 /*
 x = 14 - 6++*4
